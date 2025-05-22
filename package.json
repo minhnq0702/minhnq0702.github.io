@@ -1,0 +1,24 @@
+{
+  "name": "minhnq0702-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website built with Jekyll and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss assets/css/tailwind.css -o assets/css/styles.css",
+    "watch:css": "postcss assets/css/tailwind.css -o assets/css/styles.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "jekyll",
+    "tailwindcss"
+  ],
+  "author": "Minh Nguyen",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.7",
+    "@tailwindcss/typography": "^0.5.0"
+  }
+}

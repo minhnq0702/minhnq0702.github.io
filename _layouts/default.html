@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="bg-accent min-h-screen">
+    <div class="flex flex-col md:flex-row">
+      <!-- Sidebar -->
+      <div class="md:w-72 bg-sage md:min-h-screen">
+        {% include sidebar.html %}
+      </div>
+      
+      <!-- Main Content -->
+      <div class="flex-1 p-4 md:p-8">
+        {% include header.html %}
+        <main class="mt-6">
+          {{ content }}
+        </main>
+        
+        <footer class="mt-12 py-4 border-t border-sage">
+          <div class="container mx-auto text-center text-sm">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }}. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
