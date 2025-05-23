@@ -1,0 +1,34 @@
+I"H<h1 id="contact-me">Contact Me</h1>
+
+<p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello!</p>
+
+<h2 id="email">Email</h2>
+<p>minhnq0702@example.com</p>
+
+<h2 id="social-media">Social Media</h2>
+<ul>
+  <li><a href="https://github.com/minhnq0702">GitHub</a></li>
+  <li><a href="https://linkedin.com/in/minhnq0702">LinkedIn</a></li>
+  <li><a href="https://twitter.com/minhnq0702">Twitter</a></li>
+</ul>
+
+<h2 id="contact-form">Contact Form</h2>
+
+<form action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="" />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email" required="" />
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required=""></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<p><small>Note: Please replace the Formspree endpoint with your actual endpoint after signing up at <a href="https://formspree.io/">Formspree</a>.</small></p>
+:ET

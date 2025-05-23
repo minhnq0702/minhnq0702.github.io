@@ -1,42 +1,66 @@
-title: Minh Nguyen - Portfolio
-description: Professional CV and Project Portfolio
+title: Minh Nguyen
+subtitle: Personal Site
+description: >-
+  Personal website and portfolio of Minh Nguyen
 url: "https://minhnq0702.github.io"
+baseurl: ""
 
-markdown: kramdown
-highlighter: rouge
+# Navigation
+urls:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Blog
+    url: /blog
+  - text: Projects
+    url: /projects
+  - text: Contact
+    url: /contact
 
+# Author Settings
+author:
+  name: Minh Nguyen
+  avatar: profile.jpg
+  bio: Software Engineer
+  email: minhnq0702@example.com
+  github: minhnq0702
+  linkedin: minhnq0702
+  twitter: minhnq0702
+
+# Google Analytics
+google_analytics: ""
+
+# Build settings
+# Using local theme setup instead of gem-based theme
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-# Personal Information Variables
-name: "Minh Nguyen"
-title_job: "Software Engineer"
-email: "minhnq0702@example.com"
-phone: "+1234567890"
-location: "Ho Chi Minh City, Vietnam"
-linkedin: "minhnq0702"
-github: "minhnq0702"
+# Pagination
+paginate: 4
+paginate_path: "/blog/page/:num"
 
-# Projects Configuration
-projects:
-  - name: "E-commerce Platform"
-    slug: "project1"
-    tech: "React, Node.js, MongoDB"
-    summary: "A full-stack e-commerce solution with payment integration"
-  - name: "AI Chatbot"
-    slug: "project2"
-    tech: "Python, TensorFlow, Flask"
-    summary: "Intelligent chatbot for customer service automation"
-  - name: "Mobile Fitness App"
-    slug: "project3"
-    tech: "Flutter, Firebase"
-    summary: "Cross-platform fitness tracking application"
-  - name: "Data Visualization Dashboard"
-    slug: "project4"
-    tech: "D3.js, Vue.js, Express"
-    summary: "Interactive dashboard for business analytics"
-  - name: "Blockchain Wallet"
-    slug: "project5"
-    tech: "Solidity, Web3.js, React"
-    summary: "Secure cryptocurrency wallet with transaction history"
+# Jekyll SEO Tag
+twitter:
+  username: minhnq0702
+  card: summary
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Minh Nguyen"
+      
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - devlopr-jekyll
